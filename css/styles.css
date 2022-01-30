@@ -4,6 +4,16 @@
 
 /*  */
 
+.centrado {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fotito {
+    height: 400px;
+}
+
 .logo {
     width: 90px;
     height: 90px;
@@ -161,7 +171,39 @@
     font-size: 1.1rem;
 }
 
+.spanes {
+    color: green;
+    font-size: 1.9rem;
+}
+
+.producto_sep::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: grey;
+}
+
+@media only screen and (min-width: 768px) {
+    .fotito {
+        height: 400px;
+    }
+    .producto_sep::after {
+        margin-top: 1em;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
+    .fotito {
+        border-radius: 10px;
+    }
+    .spanes {
+        color: green;
+        font-size: 2.4rem;
+    }
+    .fotito {
+        height: 500px;
+    }
     .principal {
         height: 70vh;
     }
