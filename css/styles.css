@@ -57,6 +57,21 @@
     text-transform: uppercase;
 }
 
+.opiniones_card {
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.opiniones .opiniones_estrellas {
+    color: #ffc700;
+    font-size: 1.8rem;
+}
+
+.opiniones_autor {
+    color: green;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 1200px) {
     .principal {
         height: 70vh;
