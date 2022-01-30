@@ -145,6 +145,22 @@
     transition: 350ms ease;
 }
 
+.historia_texto {
+    line-height: 1.5;
+}
+
+.staff {
+    background-color: red;
+}
+
+.staff_texto {
+    background-color: #212529;
+    color: white;
+    text-align: justify;
+    padding: 1em 1em;
+    font-size: 1.1rem;
+}
+
 @media only screen and (min-width: 1200px) {
     .principal {
         height: 70vh;
@@ -157,5 +173,9 @@
     }
     .footer {
         font-size: 1.5rem;
+    }
+    .historia_texto {
+        line-height: 1.8;
+        font-size: 1.3rem;
     }
 }
