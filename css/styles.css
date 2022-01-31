@@ -10,6 +10,10 @@
     margin: 0 auto;
 }
 
+.foto_gal {
+    height: 400px;
+}
+
 .fotito {
     height: 400px;
 }
@@ -188,6 +192,9 @@
     .fotito {
         height: 400px;
     }
+    .foto_gal {
+        border-radius: 10px;
+    }
     .producto_sep::after {
         margin-top: 1em;
     }
@@ -195,14 +202,16 @@
 
 @media only screen and (min-width: 1200px) {
     .fotito {
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .foto_gal {
         border-radius: 10px;
     }
     .spanes {
         color: green;
         font-size: 2.4rem;
-    }
-    .fotito {
-        height: 500px;
     }
     .principal {
         height: 70vh;
