@@ -81,7 +81,7 @@
         <div class="row align-items-center mt-3 mt-lg-5 mb-lg-5 container mx-auto">
 
             <div class="col-12 col-lg-5">
-                <div class="d-flex justify-content-start justify-content-md-center justify-content-lg-start align-items-center mb-3">
+                <div class="d-flex justify-content-start justify-content-md-center justify-content-lg-start align-items-center mb-3 prueba">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house svgs me-4" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                         <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
@@ -90,8 +90,9 @@
                 </div>
 
                 <div class="d-flex justify-content-start justify-content-md-center justify-content-lg-start align-items-center mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-map svgs me-4" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt svgs me-4" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                       </svg>
                     <p class="fuente_size ffm">Paysandú - Uruguay</p>
                 </div>
@@ -145,48 +146,24 @@
                 <form class="contact-form" id="contact-form">
                     <input type="hidden" name="contact_number">
                     <div class="form-floating mb-3">
-                        <input type="email" name="user_email" class="form-control" id="email" placeholder="name@example.com">
-                        <label for="email">Email</label>
+                        <input type="email" name="user_email" class="form-control ffm fs-5" id="email" placeholder="name@example.com">
+                        <label class="ffm" for="email">Email</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="user_name" id="nombre" placeholder="Nombre">
-                        <label for="user_name">Nombre</label>
+                        <input type="text" class="form-control ffm fs-5" name="user_name" id="nombre" placeholder="Nombre">
+                        <label class="ffm" for="user_name">Nombre</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto">
-                        <label for="asunto">Asunto</label>
+                        <input type="text" class="form-control ffm fs-5" name="asunto" id="asunto" placeholder="Asunto">
+                        <label class="ffm" for="asunto">Asunto</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control msj_text" name="message" placeholder="Mensaje" id="mensaje" style="height: 200px"></textarea>
-                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control msj_text ffm fs-5" name="message" placeholder="Mensaje" id="mensaje" style="height: 200px"></textarea>
+                        <label class="ffm" for="mensaje">Mensaje</label>
                     </div>
 
-                    <button type="submit" class="w-100 btn btn-primary btn-lg boton">Enviar</button>
+                    <button type="submit" class="w-100 btn btn-primary btn-lg boton ffm fs-4">Enviar</button>
                 </form>
-                <!-- <form class="contact-form" id="contact-form">
-                    <input type="hidden" name="contact_number">
-                    <div class="contact-form-divs">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="user_name" id="nombre" autocomplete="off" placeholder="Escribe tu nombre">
-                    </div>
-    
-                    <div class="contact-form-divs">
-                        <label for="email">Email</label>
-                        <input type="email" name="user_email" id="email" autocomplete="off" placeholder="Correo Eléctronico">
-                    </div>
-    
-                    <div class="contact-form-divs">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" autocomplete="off" placeholder="Asunto">
-                    </div>
-    
-                    <div class="contact-form-divs">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="message" cols="30" rows="10"></textarea>
-                    </div>
-    
-                    <button>Enviar</button>
-                </form> -->
             </div>
 
             <div class="d-none d-lg-block col-12 col-lg-4">
