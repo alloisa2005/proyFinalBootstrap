@@ -198,6 +198,15 @@
     background-color: grey;
 }
 
+.msj_text {
+    resize: none;
+}
+
+.boton {
+    border: 1px solid #212529!important;
+    background-color: #212529!important;
+}
+
 @media only screen and (min-width: 768px) {
     .svgs {
         height: 50px;

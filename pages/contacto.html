@@ -12,6 +12,33 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Email JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_WuDIePUEilN6G0oP4RB59");
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            let formulario = document.getElementById('contact-form');
+
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_pf7zhfl', 'template_2o06m8b', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -111,6 +138,62 @@
         <div class="d-flex justify-content-around bg-dark c-blanco py-2">
             <h2 class="ffs display-4">Comentarios o Sugerencias</h2>
         </div>
+
+        <div class="row mt-lg-5 container-fluid">
+            <div class="mt-3 col-12 col-lg-8">
+
+                <form class="contact-form" id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <div class="form-floating mb-3">
+                        <input type="email" name="user_email" class="form-control" id="email" placeholder="name@example.com">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="user_name" id="nombre" placeholder="Nombre">
+                        <label for="user_name">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto">
+                        <label for="asunto">Asunto</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control msj_text" name="message" placeholder="Mensaje" id="mensaje" style="height: 200px"></textarea>
+                        <label for="mensaje">Mensaje</label>
+                    </div>
+
+                    <button type="submit" class="w-100 btn btn-primary btn-lg boton">Enviar</button>
+                </form>
+                <!-- <form class="contact-form" id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <div class="contact-form-divs">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="user_name" id="nombre" autocomplete="off" placeholder="Escribe tu nombre">
+                    </div>
+    
+                    <div class="contact-form-divs">
+                        <label for="email">Email</label>
+                        <input type="email" name="user_email" id="email" autocomplete="off" placeholder="Correo Eléctronico">
+                    </div>
+    
+                    <div class="contact-form-divs">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" autocomplete="off" placeholder="Asunto">
+                    </div>
+    
+                    <div class="contact-form-divs">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="message" cols="30" rows="10"></textarea>
+                    </div>
+    
+                    <button>Enviar</button>
+                </form> -->
+            </div>
+
+            <div class="d-none d-lg-block col-12 col-lg-4">
+                <img class="w-100 fotito" src="../images/canillas.jpg" alt="Canillas">
+            </div>
+        </div>
+
     </section>
     <!-- -------------------------------------- FIN FORMULARIO -------------------------------------- -->
 
