@@ -130,12 +130,12 @@
 }
 
 .svgs {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 }
 
 .fuente_size {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: bold;
 }
 
@@ -199,6 +199,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .svgs {
+        height: 50px;
+        width: 50px;
+    }
     .fotito {
         height: 400px;
     }
@@ -214,8 +218,12 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    .svgs {
+        height: 60px;
+        width: 60px;
+    }
     .fuente_size {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .fotito {
         height: 500px;
