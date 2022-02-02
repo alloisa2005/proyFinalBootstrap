@@ -10,8 +10,18 @@
     margin: 0 auto;
 }
 
+.btn_modificado {
+    border: none!important;
+}
+
 .foto_gal {
     height: 400px;
+    transform: translateY(0px);
+}
+
+.foto_gal:hover {
+    transform: translateY(-7px);
+    cursor: pointer;
 }
 
 .fotito {
@@ -260,9 +270,6 @@
         height: 500px;
         border-radius: 10px;
         object-fit: cover;
-    }
-    .foto_gal {
-        border-radius: 10px;
     }
     .spanes {
         color: green;
