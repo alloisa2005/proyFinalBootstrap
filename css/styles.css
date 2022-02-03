@@ -16,12 +16,21 @@
 
 .foto_gal {
     height: 400px;
+    box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
     transform: translateY(0px);
 }
 
 .foto_gal:hover {
     transform: translateY(-7px);
     cursor: pointer;
+}
+
+.shadow-per {
+    box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
 }
 
 .fotito {
@@ -31,6 +40,10 @@
 .logo {
     width: 90px;
     height: 90px;
+}
+
+.b-radius-10 {
+    border-radius: 10px;
 }
 
 .c-blanco {
@@ -60,6 +73,21 @@
 .link_activado:hover::after {
     transform: scaleX(100%);
     transition: transform 200ms ease-in;
+}
+
+.iconos-anim::after {
+    content: '';
+    display: block;
+    margin-top: .3em;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, .68);
+    transform: scaleX(0%);
+    transition: all 230ms ease;
+}
+
+.iconos-anim:hover::after {
+    transform: scaleX(100%);
 }
 
 .logo-whats {
