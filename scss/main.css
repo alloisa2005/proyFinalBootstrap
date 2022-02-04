@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* IMPORT DE FUENTES  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+/* COLORES */
+/*  FONT FAMILY´s */
+/* SOMBRA PERSONALIZADA */
+.shadow-per {
+  box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+}
+
+.foto_gal {
+  height: 400px;
+  box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.foto_gal:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  cursor: pointer;
+}
+
+.centrado {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn_modificado {
+  border: none !important;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+}
+
+.logo-whats {
+  width: 40px;
+  height: 40px;
+}
+
+.b-radius-10 {
+  border-radius: 10px;
+}
+
+.c-blanco {
+  color: white;
+}
+
+.ffm {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ffs {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.color-whats path {
+  fill: #00bb2d;
+}
+
+.spanes {
+  color: green;
+  font-size: 1.9rem;
+}
+
+.fotito {
+  height: 400px;
+}
+
+.flecha {
+  width: 40px;
+  height: 40px;
+}
+
+.flecha path {
+  fill: white;
+}
+
+.flecha:hover {
+  background-color: white;
+  border-radius: 100%;
+  padding: 5px;
+  -webkit-transition: 350ms ease;
+  transition: 350ms ease;
+}
+
+.flecha:hover path {
+  fill: #212529;
+  -webkit-transition: 350ms ease;
+  transition: 350ms ease;
+}
+
+.texto_parrafo {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+/* NAVBAR */
+.link_activado::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: green;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0%);
+          transform: scaleX(0%);
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+.link_activado:hover::after {
+  -webkit-transform: scaleX(100%);
+          transform: scaleX(100%);
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+/* PAGINAS */
+.principal {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-image: url(../images/imgPrincipal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.principal__titulo {
+  background-color: rgba(0, 0, 0, 0.68);
+  width: 60%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 7px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.9rem;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.info_complementaria {
+  color: green;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.opiniones_card {
+  width: 90%;
+  border-radius: 10px;
+  height: 300px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.opiniones_estrellas {
+  color: #ffc700;
+  font-size: 1.8rem;
+}
+
+.opiniones_autor {
+  color: green;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
