@@ -92,6 +92,28 @@
     font-size: 1.1rem;
 }
 
+.footer {
+    color: $thirdColor;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.historia_texto {
+    line-height: 1.5;
+}
+
+.mapa {
+    height: 400px;
+}
+
+.icono {
+    width: 60px;
+    height: 60px;
+    path {
+        fill: $thirdColor;
+    }
+}
+
 
 /* NAVBAR */
 
@@ -110,5 +132,33 @@
     &:hover::after {
         transform: scaleX(100%);
         transition: transform 200ms ease-in;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fotito {
+        height: 400px;
+    }
+    .foto_gal {
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .fotito {
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .spanes {
+        color: $secondaryColor;
+        font-size: 2.4rem;
+    }
+    .footer {
+        font-size: 1.5rem;
+    }
+    .historia_texto {
+        line-height: 1.8;
+        font-size: 1.3rem;
     }
 }

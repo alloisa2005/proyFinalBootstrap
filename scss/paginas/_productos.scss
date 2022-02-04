@@ -1,0 +1,17 @@
+.producto_sep {
+    &::after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 2px;
+        background-color: $colorLine;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .producto_sep {
+        &::after {
+            margin-top: 1em;
+        }
+    }
+}
