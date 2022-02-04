@@ -329,10 +329,6 @@
   font-size: 1.1rem;
 }
 
-.staff {
-  background-color: transparent;
-}
-
 .producto_sep::after {
   content: "";
   width: 100%;
