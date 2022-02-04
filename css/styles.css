@@ -4,6 +4,10 @@
 
 /*  */
 
+.color-whats path {
+    fill: #00bb2d;
+}
+
 .centrado {
     width: 90%;
     max-width: 1200px;
@@ -249,23 +253,6 @@
     border: 1px solid #212529!important;
     background-color: #212529!important;
 }
-
-
-/* .flecha path {
-    fill: white
-}
-
-.flecha:hover {
-    background-color: white;
-    border-radius: 100%;
-    padding: 5px;
-    transition: 350ms ease;
-}
-
-.flecha:hover path {
-    fill: #212529;
-    transition: 350ms ease;
-} */
 
 @media only screen and (min-width: 768px) {
     .svgs {
