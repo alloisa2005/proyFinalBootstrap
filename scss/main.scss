@@ -1,10 +1,11 @@
-@import './utilidades/_variables.scss';
-@import './utilidades/_generales.scss';
+@import './utilidades/variables';
+@import './utilidades/mixins';
+@import './utilidades/generales';
 
 /* PAGINAS */
 
-@import './paginas/_index.scss';
-@import './paginas/_footer.scss';
-@import './paginas/_contacto.scss';
-@import './paginas/_nosotros.scss';
-@import './paginas/_productos.scss';
+@import './paginas/index';
+@import './paginas/footer';
+@import './paginas/contacto';
+@import './paginas/nosotros';
+@import './paginas/productos';

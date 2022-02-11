@@ -6,6 +6,7 @@
 /* COLORES */
 /*  */
 /*  FONT FAMILY´s */
+/* Creo Mixin para los MediaQueries */
 /* SOMBRA PERSONALIZADA */
 .shadow-per {
   box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);

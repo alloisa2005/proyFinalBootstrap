@@ -40,7 +40,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@include mediaQ(min, 768px) {
     .svgs {
         height: 50px;
         width: 50px;
@@ -50,7 +50,7 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@include mediaQ(min, 1200px) {
     .svgs {
         height: 60px;
         width: 60px;

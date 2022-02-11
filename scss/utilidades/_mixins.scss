@@ -1,0 +1,16 @@
+/* Creo Mixin para los MediaQueries */
+
+@mixin mediaQ ($minMax, $pixels) {
+    @if $minMax==min {
+        @media only screen and (min-width: $pixels) {
+            @content
+        }
+    }
+    @else {
+        @media only screen and (max-width: $pixels) {
+            @content
+        }
+    }
+}
+
+;

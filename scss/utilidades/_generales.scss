@@ -82,7 +82,7 @@
         padding: 5px;
         transition: 350ms ease;
         path {
-            fill: #212529;
+            fill: map-get($colores, mainColor);
             transition: 350ms ease;
         }
     }
@@ -136,7 +136,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@include mediaQ(min, 768px) {
     .fotito {
         height: 400px;
     }
@@ -145,7 +145,7 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@include mediaQ(min, 1200px) {
     .fotito {
         height: 500px;
         border-radius: 10px;
