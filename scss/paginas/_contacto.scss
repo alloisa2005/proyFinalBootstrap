@@ -30,13 +30,13 @@
 }
 
 .boton {
-    border: 1px solid $mainColor!important;
-    background-color: $mainColor!important;
+    border: 1px solid map-get($colores, mainColor)!important;
+    background-color: map-get($colores, mainColor)!important;
     font-weight: bold;
     &:hover {
-        color: $mainColor;
-        background-color: $thirdColor!important;
-        border: 1px solid $mainColor!important;
+        color: map-get($colores, mainColor)!important;
+        background-color: map-get($colores, thirdColor)!important;
+        border: 1px solid map-get($colores, mainColor)!important;
     }
 }
 
