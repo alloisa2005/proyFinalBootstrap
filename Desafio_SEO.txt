@@ -6,5 +6,6 @@ Cosas realizadas:
 3- Modifiqué el title en cada página del sitio.
 4- Creé el archivo sitemap.xml (quedó en la raíz del proyecto).
 5- En el archivo _variables.scss  hice un mapa donde guardo la paleta de colores utilizada, en los distintos archivos scss utilizo ese mapa para referenciar los colores.
-6- Hice un mixin (_mixins.scss) para tratar los mediaqueries.
-7- El formulario de contacto funciona, con un correo de verdad se puede probar (debería llegar un correo con un mensaje), pude configurar el EMAIL-JS.
+6- En el archivo _variables.scss hice un extend, para la sombra de algunos elementos que uso en el sitio.
+7- Hice un mixin (_mixins.scss) para tratar los mediaqueries.
+8- El formulario de contacto funciona, con un correo de verdad se puede probar (debería llegar un correo con un mensaje), pude configurar el EMAIL-JS.

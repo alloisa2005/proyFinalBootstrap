@@ -4,21 +4,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
 /* COLORES */
-/*  */
+/* Mapa de Colores */
 /*  FONT FAMILY´s */
-/* Creo Mixin para los MediaQueries */
-/* SOMBRA PERSONALIZADA */
-.shadow-per {
+/* Extend de Sombra Personalizada */
+.shadow-per, .foto_gal {
   box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
   -webkit-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
   -moz-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
 }
 
+/* Creo Mixin para los MediaQueries */
+/* SOMBRA PERSONALIZADA */
 .foto_gal {
   height: 400px;
-  box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
-  -webkit-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
-  -moz-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }

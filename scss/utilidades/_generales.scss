@@ -1,16 +1,12 @@
 /* SOMBRA PERSONALIZADA */
 
 .shadow-per {
-    box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
-    -webkit-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
-    -moz-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+    @extend %sombra;
 }
 
 .foto_gal {
     height: 400px;
-    box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
-    -webkit-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
-    -moz-box-shadow: 10px 9px 23px -7px rgba(0, 0, 0, 0.73);
+    @extend %sombra;
     transform: translateY(0px);
     &:hover {
         transform: translateY(-7px);
